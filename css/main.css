@@ -1,32 +1,26 @@
 /* Created 05-28-2022 */
 /* header */
-
-@import 'partials/variables.scss';
-
 header {
-
   top: 0;
   left: 0;
-  background-color: $color1;
+  background-color: rgb(54, 39, 6);
   width: 100%;
   height: 10vh;
-  color: $color4;
+  color: rgb(233, 229, 214);
   padding: 0 2rem;
-  font-family: 'Poppins', sans-serif;
-
-  nav {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    h1 {
-      font-size: 2rem;
-      line-height: 10vh;
-      text-transform: uppercase;
-    }
-  }
+  font-family: "Poppins", sans-serif;
+}
+header nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav h1 {
+  font-size: 2rem;
+  line-height: 10vh;
+  text-transform: uppercase;
 }
 
 .toggle {
@@ -64,23 +58,21 @@ header {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: $color1;
+  background-color: rgb(54, 39, 6);
   flex-direction: column;
   text-align: center;
   padding: 2rem;
   justify-content: space-around;
   transform: translateX(-100%);
   transition: transform 1s;
-
-  li a {
-    color: $color4;
-    text-decoration: none;
-    text-transform:uppercase;
-  }
+}
+.menu li a {
+  color: rgb(233, 229, 214);
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /*Section About*/
-
 .banner {
   background-image: url("../img/about.jpg");
   background-size: cover;
@@ -89,31 +81,26 @@ header {
   height: 80vh;
 }
 
-// Footer
-
 footer {
-  background-color: $color1;
+  background-color: rgb(54, 39, 6);
   width: 100%;
   height: 10vh;
-  color: $color4;
+  color: rgb(233, 229, 214);
   padding: 0 2rem;
 }
 
-.socials-medias{
-  display:flex;
+.socials-medias {
+  display: flex;
   line-height: 10vh;
   justify-content: space-between;
-  li{
-    a{
-      text-decoration: none;
-      text-transform: uppercase;
-      color:$color4
-    }
-  }
+}
+.socials-medias li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(233, 229, 214);
 }
 
 @media screen and (min-width: 991px) {
-
   .toggle {
     display: none;
   }
@@ -125,10 +112,10 @@ footer {
     justify-content: center;
     width: 11rem;
     height: 0;
-    li {
-      margin: 0 0.6rem;
-      padding: 0 0.6rem;
-    }
+  }
+  .menu li {
+    margin: 0 0.6rem;
+    padding: 0 0.6rem;
   }
 
   .open .menu {
@@ -140,3 +127,5 @@ footer {
     z-index: 20;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
