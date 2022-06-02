@@ -1,6 +1,11 @@
 
-
+/* COLOR */
 $color1:rgb(54, 39, 6);
 $color2:rgb(70, 78, 46);
 $color3:rgb(172, 185, 146);
 $color4:rgb(233, 229, 214);
+$portfolio: lighten($color2,10%);
+
+/*FONTS*/
+
+$mainFont:'Poppins', sans-serif;

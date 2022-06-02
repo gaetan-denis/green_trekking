@@ -1,10 +1,21 @@
 /* Created 05-28-2022 */
-/* header */
+
+/*Variables Importations*/
 
 @import 'partials/variables.scss';
 
-header {
+/* GENERAL */
 
+/*HTML*/
+
+html{
+  font-size: 16px;
+}
+
+/*HEADER*/
+
+header {
+  font-family:$mainFont;
   top: 0;
   left: 0;
   background-color: $color1;
@@ -12,7 +23,6 @@ header {
   height: 10vh;
   color: $color4;
   padding: 0 2rem;
-  font-family: 'Poppins', sans-serif;
 
   nav {
     width: 100%;
@@ -34,7 +44,7 @@ header {
   font-size: 2rem;
   cursor: pointer;
   position: relative;
-  z-index: 20;
+  z-index: 50;
 }
 
 .open .menu {
@@ -71,27 +81,86 @@ header {
   justify-content: space-around;
   transform: translateX(-100%);
   transition: transform 1s;
+  z-index:49;
 
-  li a {
-    color: $color4;
-    text-decoration: none;
-    text-transform:uppercase;
+  li {
+    a {
+      color: $color4;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    a:hover {
+      transition: 0.5s;
+      color: $color3;
+    }
+
   }
 }
 
-/*Section About*/
+/*SECTION*/
 
-.banner {
-  background-image: url("../img/about.jpg");
+/*ABOUT*/
+
+.banner-about {
+  background-image: url("../img/banners/about.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 40vh;
 }
 
-// Footer
+.about-me {
+
+  padding: 1rem;
+  background-color: $color4;
+  color: $color1;
+  font-family: "Poppins", sans-serif;
+
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  h3 {
+
+    text-transform: capitalize;
+  }
+
+  p {
+    padding: 1rem;
+  }
+}
+
+/*PORTFOLIO*/
+
+.portefolio{
+  display:block;
+  height:80vh;
+}img{
+  position: absolute;
+  height:80vh;
+  width:100%;
+ }
+
+/* CONTACT */
+.banner-contact{
+background-image: url("../img/banners/contact.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 40vh;
+}
+form{
+  height:40vh;
+  background-color: $color3;
+}
+
+
+/* FOOTER */
 
 footer {
+  font-family: "Poppins", sans-serif;
   background-color: $color1;
   width: 100%;
   height: 10vh;
@@ -99,20 +168,76 @@ footer {
   padding: 0 2rem;
 }
 
-.socials-medias{
-  display:flex;
+.socials-medias {
+  display: flex;
   line-height: 10vh;
-  justify-content: space-between;
-  li{
-    a{
+  justify-content: space-around;
+
+  li {
+    a {
+      font-size: 0.8rem;
       text-decoration: none;
       text-transform: uppercase;
-      color:$color4
+      color: $color4;
+
+      i {
+        line-height: 10vh;
+        display: contents;
+        /*font-size: 300%;*/
+      }
+      span {
+        display: none;
+      }
+    }
+
+    a:hover {
+
+      transition: 0.5s;
+      color: $color3;
     }
   }
 }
 
+/* RESPONSIVE TABLET*/
+
+@media screen and (min-width: 768px) {
+
+  /*Section*/
+
+  /*ABOUT*/
+
+  .banner-about {
+    background-image: url("../img/banners/about.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+  }
+
+  /*FOOTER*/
+
+  .socials-medias {
+    li {
+      font-size: 1rem;
+
+      a {
+        i {
+          margin-right: 1.5rem;
+        }
+
+        span {
+          display:inline-block;
+        }
+      }
+    }
+  }
+}
+
+/*RESPONSIVE DESKTOP*/
+
 @media screen and (min-width: 991px) {
+
+  /*Header*/
 
   .toggle {
     display: none;
@@ -125,6 +250,7 @@ footer {
     justify-content: center;
     width: 11rem;
     height: 0;
+
     li {
       margin: 0 0.6rem;
       padding: 0 0.6rem;
@@ -139,4 +265,31 @@ footer {
     position: relative;
     z-index: 20;
   }
+
+  /*SECTION*/
+
+  /*ABOUT*/
+  .banner-about {
+    background-image: url("../img/banners/about.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+  }
+
+  /*FOOTER*/
+
+  .socials-medias {
+    li {
+      a {
+        span {
+          display: inline-block;
+        }
+
+        font-size: 1rem;
+      }
+    }
+  }
 }
+
+
