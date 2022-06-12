@@ -115,36 +115,42 @@ h2 {
   font-family: "Poppins", sans-serif;
 }
 .about-me .about-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   background-color: rgb(233, 229, 214);
   border: 2px solid rgb(54, 39, 6);
   border-radius: 6px;
-  margin: 2rem 2rem;
-  padding: 2rem 2rem;
+  margin: 1rem;
+  padding: 1rem;
 }
 .about-me .about-container h3 {
   text-align: center;
   text-transform: capitalize;
 }
+.about-me .about-container img {
+  border-radius: 180px;
+  justify-content: center;
+}
 .about-me .about-container p {
   background-color: rgb(233, 229, 214);
+  padding: 1rem;
 }
 .about-me h3 {
   text-transform: capitalize;
 }
-.about-me p {
-  padding: 1rem;
-}
 
 /*SKILLS*/
 .banner-skills {
-  background-image: url("../img/banners/skills.jpg");
+  background-image: url("../img/banners/chien.jpg");
   background-size: cover;
   background-position: 50% 80%;
   background-repeat: no-repeat;
   height: 40vh;
 }
 
-/*Slider*/
+/*PORTEFOLIO*/
 #slider {
   background-color: rgb(172, 185, 146);
   position: relative;
@@ -182,9 +188,9 @@ h2 {
 
 /*TESTIMONIAL*/
 .banner-testimonial {
-  background-image: url("../img/banners/skills.jpg");
+  background-image: url("../img/banners/testimonials.jpg");
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   height: 40vh;
 }
@@ -198,54 +204,6 @@ h2 {
   height: 40vh;
 }
 
-/*
-.contact {
-  font-family: $mainFont;
-  witdh: 100%;
-  text-align: center;
-  color: $color1;
-  font-family: $mainFont;
-  height: auto;
-  background-color: $color3;
-
-  h2 {
-    padding: 0.5rem;
-    background-color: $color4;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  form {
-    margin: 1rem;
-    padding: 1rem;
-
-    input, textarea, submit {
-      border-radius: 6px;
-      background-color: $color4;
-    }
-
-    textarea {
-      width: 18.75rem;
-      height: 9.37rem;
-    }
-
-    .map {
-      margin-bottom: 3rem;
-      height: auto;
-      width: 100%;
-
-      iframe {
-        display: block;
-        text-align: center;
-        margin: auto;
-        height: 25%;
-        width: 25%;
-      }
-    }
-  }
-}
-
-*/
 .contact-container {
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -257,7 +215,6 @@ form {
   margin: 1rem;
   background-color: rgb(233, 229, 214);
   border-radius: 10px;
-  padding: 30px;
 }
 form .body-form {
   display: flex;
@@ -304,6 +261,7 @@ form .body-form .right box {
 }
 form .footer-form {
   width: 100%;
+  margin: 0 30%;
 }
 form .footer-form button {
   font-size: 15px;
@@ -318,8 +276,34 @@ form .footer-form button {
   cursor: pointer;
 }
 form .footer-form button:hover {
+  transform: scale(1.05);
   background-color: rgb(172, 185, 146);
   transition: 0.5s;
+}
+
+.resp-container address {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid rgb(54, 39, 6);
+  background-color: rgb(233, 229, 214);
+  border-radius: 6px;
+}
+.resp-container .map-responsive {
+  margin: 1rem;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.resp-container .map-responsive iframe {
+  border-radius: 6px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /* FOOTER */
@@ -361,25 +345,9 @@ footer {
   /*Section*/
   /*ABOUT*/
   /*CONTACT*/
-  .contact {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .contact .map {
-    height: 300px;
-    width: 300px;
-    border: 1px solid rgb(54, 39, 6);
-    border-radius: 6px;
-  }
-  .contact .map iframe {
-    height: 100%;
+  form .footer-form {
     width: 100%;
-  }
-
-  p {
-    display: flex;
-    text-align: center;
+    margin: 0 40%;
   }
 
   /*Portfolio*/
@@ -444,22 +412,6 @@ footer {
   }
 
   /*CONTACT*/
-  .contact {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .contact .map {
-    height: 400px;
-    width: 400px;
-    border: 1px solid rgb(54, 39, 6);
-    border-radius: 6px;
-  }
-  .contact .map iframe {
-    height: 100%;
-    width: 100%;
-  }
-
   /*Portfolio*/
   #slider {
     background-color: rgb(172, 185, 146);
