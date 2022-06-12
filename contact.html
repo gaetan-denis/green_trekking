@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,19 +34,65 @@
     </nav>
 </header>
 <section>
-    <div class="banner-contact"></div>
-    <div class="contact">
-        <h2>Contact</h2>
-        <form action="">
-            <label for="">Votre nom</label>
-            <input type="text" name "name>
-            <label for="">Votre adresse mail</label>
-            <input type="mail">
-            <label for="message">Votre message</label>
-            <input type="text">
-        </form>
-    </div>
 
+    <div class="banner-contact"></div>
+    <!--
+    <h2>Contact</h2>
+    <div class="contact">
+        <form action="action/contact.php" method="post">
+            <label for="name">Votre nom :</label>
+            <br>
+            <input type="text" name="name" id="name" placeholder="Your name">
+            <br>
+            <label for="email">Votre adresse mail :</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Your mail">
+            <br>
+            <label for="message">Votre message :</label>
+            <br>
+            <textarea id="message" name="message" placeholder="Your message"></textarea>
+            <br>
+            <input type="submit">
+        </form>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1198.558995437928!2d4.877742229656014!3d50.46609083248645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c19911762f411d%3A0x3730fdb0385bc55e!2sIepscf%20Namur%20Cadets!5e0!3m2!1sfr!2sbe!4v1654590031449!5m2!1sfr!2sbe"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    -->
+    <div class="contact-container"></div>
+        <h2>Contactez-nous</h2>
+    <form action="">
+
+        <div class="body-form">
+            <div class="left">
+            <div class="box">
+                <label for="">Votre prénom</label>
+                <input type="text">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="box">
+                <label for="">Votre adresse email</label>
+                <input type="text">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="box">
+                <label for="">Votre téléphone</label>
+                <input type="text">
+                <i class="fa-solid fa-mobile"></i>
+            </div>
+            </div>
+            <div class="right">
+                <div class="box">
+                    <label for="">Votre message</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="footer-form">
+            <button >Envoyer le message</button>
+        </div>
+    </form>
+    </div>
 </section>
 <footer>
     <ul class="socials-medias">
