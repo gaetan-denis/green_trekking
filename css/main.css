@@ -103,9 +103,24 @@ header nav h1 {
 h2 {
   padding: 1rem;
   font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
   background-color: rgb(233, 229, 214);
   text-transform: uppercase;
   text-align: center;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.soulignement {
+  height: 1rem;
+  border-bottom: 2px solid rgb(70, 78, 46);
 }
 
 .about-me {
@@ -116,7 +131,6 @@ h2 {
 }
 .about-me .about-container {
   text-align: center;
-  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   background-color: rgb(233, 229, 214);
@@ -125,11 +139,8 @@ h2 {
   margin: 1rem;
   padding: 1rem;
 }
-.about-me .about-container h3 {
-  text-align: center;
-  text-transform: capitalize;
-}
 .about-me .about-container img {
+  padding-top: 1rem;
   border-radius: 180px;
   justify-content: center;
 }
@@ -193,6 +204,36 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   height: 40vh;
+}
+
+.testimonials {
+  padding: 1rem;
+  background-color: rgb(172, 185, 146);
+  color: rgb(54, 39, 6);
+  font-family: "Poppins", sans-serif;
+}
+.testimonials .testimonials-container {
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(233, 229, 214);
+  border: 2px solid rgb(54, 39, 6);
+  border-radius: 6px;
+  margin: 1rem;
+  padding: 1rem;
+}
+.testimonials .testimonials-container img {
+  padding-top: 1rem;
+  border-radius: 180px;
+  justify-content: center;
+}
+.testimonials .testimonials-container q {
+  display: block;
+  padding: 1rem;
+}
+.testimonials .testimonials-container .stars {
+  padding-top: 1rem;
+  width: auto;
 }
 
 /* CONTACT */
@@ -298,6 +339,7 @@ form .footer-form button:hover {
   height: 0;
 }
 .resp-container .map-responsive iframe {
+  border: 2px solid rgb(54, 39, 6);
   border-radius: 6px;
   left: 0;
   top: 0;
@@ -344,6 +386,17 @@ footer {
 @media screen and (min-width: 768px) {
   /*Section*/
   /*ABOUT*/
+  .about-me {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-container {
+    max-width: 26rem;
+  }
+
   /*CONTACT*/
   form .footer-form {
     width: 100%;
@@ -359,6 +412,18 @@ footer {
     display: flex;
     align-items: center;
     height: auto;
+  }
+
+  /*TESTIMONIALS*/
+  .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonials-container {
+    max-width: 26rem;
   }
 
   /*FOOTER*/
