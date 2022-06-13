@@ -193,6 +193,11 @@ h3 {
   align-items: center;
   height: 80vh;
 }
+#slider img {
+  height: 68vh;
+  width: 100vw;
+  object-fit: cover;
+}
 
 #precedent,
 #suivant {
