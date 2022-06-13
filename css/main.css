@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Created 05-28-2022 */
 /*Variables Importations*/
 /* COLOR */
@@ -6,6 +7,12 @@
 /*HTML*/
 body {
   background-color: rgb(172, 185, 146);
+  /*
+    Je met ce commentaire afin que ce overflow ne soit pas considéré comme une tentative de dissimulation d'une erreur.
+    Sans ce dernier, la page contact bug avec un scroll horizontale malvenu.
+    À corriger si possible dans les plus brefs délais..
+  */
+  overflow-x: hidden;
 }
 
 html {
@@ -156,11 +163,26 @@ h3 {
 .banner-skills {
   background-image: url("../img/banners/chien.jpg");
   background-size: cover;
-  background-position: 50% 80%;
+  background-position: 50% 63%;
   background-repeat: no-repeat;
   height: 40vh;
 }
 
+/*EXPERIENCES*/
+.banner-experiences {
+  background-image: url("../img/banners/experiences.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+
+.experiences {
+  padding: 1rem;
+}
+.experiences img {
+  border-radius: 6px;
+}
 /*PORTEFOLIO*/
 #slider {
   background-color: rgb(172, 185, 146);
@@ -179,8 +201,8 @@ h3 {
   opacity: 0;
   position: absolute;
   font-size: 100px;
-  color: rgba(220, 220, 220, 0.8);
-  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(233, 229, 214, 0.8);
+  background-color: rgba(70, 78, 46, 0.8);
   padding: 10px;
 }
 
@@ -349,6 +371,28 @@ form .footer-form button:hover {
 }
 
 /* FOOTER */
+/*scroll to up button*/
+.up-btn {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(70, 78, 46);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 15px;
+  bottom: 20px;
+  cursor: pointer;
+}
+.up-btn .icone {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(172, 185, 146);
+  color: white;
+}
+
 footer {
   font-family: "Poppins", sans-serif;
   background-color: rgb(54, 39, 6);
