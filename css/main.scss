@@ -127,7 +127,7 @@ h2 {
   padding: 1rem;
   font-family: $mainFont;
   font-weight: bold;
-  font-size:1.5rem;
+  font-size: 1.5rem;
   background-color: $color4;
   text-transform: uppercase;
   text-align: center;
@@ -135,14 +135,14 @@ h2 {
 
 h3 {
   font-weight: bold;
-  font-size:1rem;
-  padding:1rem;
+  font-size: 1rem;
+  padding: 1rem;
   text-align: center;
   text-transform: capitalize;
 }
 
-.soulignement{
-  height:1rem;
+.soulignement {
+  height: 1rem;
   border-bottom: 2px solid $color2;
 }
 
@@ -153,21 +153,22 @@ h3 {
   font-family: "Poppins", sans-serif;
 
   .about-container {
-    text-align:center;
+    text-align: center;
     justify-content: center;
     flex-wrap: wrap;
     background-color: $color4;
     border: 2px solid $color1;
     border-radius: 6px;
-    margin: 1rem ;
-    padding: 1rem ;
+    margin: 1rem;
+    padding: 1rem;
 
 
     img {
-      padding-top:1rem;
-      border-radius:180px;
+      padding-top: 1rem;
+      border-radius: 180px;
       justify-content: center;
     }
+
     p {
       background-color: $color4;
       padding: 1rem;
@@ -190,6 +191,59 @@ h3 {
   height: 40vh;
 }
 
+.container {
+  margin:auto;
+  width: 60%;
+  background-color: #ddd;
+  border-radius:20px;
+}
+
+.skills {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $color1;
+  border-radius:20px;
+  p{
+    color:$color1;
+  }
+  h3{
+    text-transform: capitalize;
+  }
+}
+
+.bar1 {
+  padding-right: 10px;
+  text-align:right;
+  width: 90%;
+  background-color: $color2;
+  color:$color4;
+}
+
+.bar2{
+  padding-right: 10px;
+  text-align:right;
+  width: 80%;
+  background-color: $color2;
+  color:$color4;
+}
+.bar3 {
+  padding-right: 10px;
+  text-align:right;
+  width: 65%;
+  background-color: $color2;
+  color:$color4;
+}
+
+.bar4 {
+  padding-right: 10px;
+  text-align:right;
+  width:60%;
+  background-color: $color2;
+  color:$color4;
+}
+
+
 /*EXPERIENCES*/
 
 .banner-experiences {
@@ -200,12 +254,15 @@ h3 {
   height: 40vh;
 }
 
-.experiences{
-  padding:1rem;
-  img{
-    border-radius:6px;
+.experiences {
+  padding: 1rem;
+
+  img {
+    border-radius: 6px;
   }
-  .experience-text{}
+
+  .experience-text {
+  }
 }
 
 /*PORTEFOLIO*/
@@ -217,14 +274,14 @@ h3 {
   margin: auto;
   display: flex;
   align-items: center;
-  height: 80vh;
-  img{
-    height:68vh;
-    width:100vw;
-    object-fit:cover;
+  height: 67.5vh;
+
+  img {
+    height: 66vh;
+    width: 100vw;
+    object-fit: cover;
   }
 }
-
 
 
 #precedent,
@@ -235,7 +292,7 @@ h3 {
   position: absolute;
   font-size: 100px;
   color: rgba($color4, 0.8);
-  background-color: rgba($color2,0.8);
+  background-color: rgba($color2, 0.8);
   padding: 10px;
 }
 
@@ -269,27 +326,29 @@ h3 {
   font-family: "Poppins", sans-serif;
 
   .testimonials-container {
-    text-align:center;
+    text-align: center;
     justify-content: center;
     flex-wrap: wrap;
     background-color: $color4;
     border: 2px solid $color1;
     border-radius: 6px;
-    margin: 1rem ;
-    padding: 1rem ;
+    margin: 1rem;
+    padding: 1rem;
 
     img {
-      padding-top:1rem;
-      border-radius:180px;
+      padding-top: 1rem;
+      border-radius: 180px;
       justify-content: center;
     }
-    q{
+
+    q {
       display: block;
       padding: 1rem;
     }
-    .stars{
-      padding-top:1rem;
-      width:auto;
+
+    .stars {
+      padding-top: 1rem;
+      width: auto;
     }
   }
 }
@@ -414,7 +473,7 @@ form {
     height: 0;
 
     iframe {
-      border:2px solid $color1;
+      border: 2px solid $color1;
       border-radius: 6px;
       left: 0;
       top: 0;
@@ -430,24 +489,25 @@ form {
 
 /*scroll to up button*/
 
-.up-btn{
-  height:50px;
-  width:50px;
-  background-color : $color2;
-  border-radius:50%;
-  display:flex;
+.up-btn {
+  height: 50px;
+  width: 50px;
+  background-color: $color2;
+  border-radius: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  position:fixed;
-  right:15px;
-  bottom:20px;
-  cursor:pointer;
-  .icone{
-    width:25px;
-    height:25px;
-    border-radius:50%;
+  position: fixed;
+  right: 15px;
+  bottom: 20px;
+  cursor: pointer;
+
+  .icone {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
     background-color: $color3;
-    color:white;
+    color: white;
   }
 }
 
@@ -476,7 +536,7 @@ footer {
       i {
         line-height: 10vh;
         display: contents;
-        /*font-size: 300%;*/
+        /*font-size: 150%;*/
       }
 
       span {
@@ -500,14 +560,14 @@ footer {
 
   /*ABOUT*/
 
-  .about-me{
-    display:flex;
+  .about-me {
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
 
-  .about-container{
+  .about-container {
     max-width: 26rem;
   }
 
@@ -519,25 +579,19 @@ footer {
 
   /*Portfolio*/
   #slider {
-    background-color: $color3;
-    position: relative;
-    width: auto;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    height: auto;
+    height: 67.5vh;
   }
 
   /*TESTIMONIALS*/
 
-  .testimonials{
-    display:flex;
+  .testimonials {
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
 
-  .testimonials-container{
+  .testimonials-container {
     max-width: 26rem;
   }
 
@@ -609,13 +663,8 @@ footer {
 
   /*Portfolio*/
   #slider {
-    background-color: $color3;
-    position: relative;
-    width: auto;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    height: 100%;
+    height: 67.5vh;
+
   }
   /*FOOTER*/
 
