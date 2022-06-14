@@ -14,7 +14,7 @@ body {
   /*
     Je met ce commentaire afin que ce overflow ne soit pas considéré comme une tentative de dissimulation d'une erreur.
     Sans ce dernier, la page contact bug avec un scroll horizontale malvenu.
-    À corriger si possible dans les plus brefs délais..
+    Je n'ai pas réussi à résoudre le soucis!
   */
   overflow-x: hidden;
 }
@@ -297,10 +297,10 @@ h3 {
   margin: auto;
   display: flex;
   align-items: center;
-  height: 67.5vh;
+  height: 63vh;
 
   img {
-    height: 66vh;
+    height: 63vh;
     width: 100vw;
     object-fit: cover;
   }
@@ -621,9 +621,7 @@ footer {
   }
 
   /*PORTEFOLIO*/
-  #slider {
-    height: 67.5vh;
-  }
+
 
   /*TESTIMONIALS*/
 
@@ -718,11 +716,6 @@ footer {
 
   /*CONTACT*/
 
-  /*Portfolio*/
-  #slider {
-    height: 67.5vh;
-
-  }
   /*FOOTER*/
 
   .up-btn {
