@@ -9,7 +9,7 @@
 
 /*HTML*/
 body {
-  background-color: $color3;
+  background-color: $color1;
 
   /*
     Je met ce commentaire afin que ce overflow ne soit pas considéré comme une tentative de dissimulation d'une erreur.
@@ -255,13 +255,20 @@ h3 {
 }
 
 .experiences {
+  background-color: $color4;
+  margin:1rem;
   padding: 1rem;
-
-  img {
-    border-radius: 6px;
+  font-family: $mainFont;
+  figure{
+    text-align:center;
+    padding-bottom:1rem;
+    img {
+      border-radius:6px;
+      height: 25%;
+    }
   }
-
-  .experience-text {
+  p{
+    padding-bottom: 1rem;
   }
 }
 
@@ -570,6 +577,22 @@ footer {
   .about-container {
     max-width: 26rem;
   }
+  /*EXPERIENCES*/
+.experiences{
+    p{
+      text-indent:2em;
+    }
+    .left {
+      margin:  1rem 1rem ;
+      float: left;
+      width:25%;
+  }
+  .right {
+    margin: 1rem 1rem ;
+    float: right;
+    width:25%;
+  }
+}
 
   /*CONTACT*/
   form .footer-form {
@@ -577,7 +600,7 @@ footer {
     margin: 0 40%;
   }
 
-  /*Portfolio*/
+  /*PORTEFOLIO*/
   #slider {
     height: 67.5vh;
   }
