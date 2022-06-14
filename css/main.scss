@@ -9,7 +9,7 @@
 
 /*HTML*/
 body {
-  background-color: $color3;
+  background-color: $color1;
 
   /*
     Je met ce commentaire afin que ce overflow ne soit pas considéré comme une tentative de dissimulation d'une erreur.
@@ -124,6 +124,7 @@ header {
 }
 
 h2 {
+  background-color: $color3;
   padding: 1rem;
   font-family: $mainFont;
   font-weight: bold;
@@ -199,11 +200,11 @@ h3 {
 }
 
 .skills {
+  background-color: $color3;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
   color: $color1;
-  border-radius:20px;
   p{
     color:$color1;
   }
@@ -213,6 +214,7 @@ h3 {
 }
 
 .bar1 {
+  border-radius:20px;
   padding-right: 10px;
   text-align:right;
   width: 90%;
@@ -221,6 +223,7 @@ h3 {
 }
 
 .bar2{
+  border-radius:20px;
   padding-right: 10px;
   text-align:right;
   width: 80%;
@@ -228,6 +231,7 @@ h3 {
   color:$color4;
 }
 .bar3 {
+  border-radius:20px;
   padding-right: 10px;
   text-align:right;
   width: 65%;
@@ -236,6 +240,7 @@ h3 {
 }
 
 .bar4 {
+  border-radius:20px;
   padding-right: 10px;
   text-align:right;
   width:60%;
@@ -253,22 +258,33 @@ h3 {
   background-repeat: no-repeat;
   height: 40vh;
 }
+.experiences-container{
+  background-color: $color3;
+  width:100%;
+  height:100%
+}
 
-.experiences {
+.experience-background{
   background-color: $color4;
-  margin:1rem;
+  border-radius:6px;
+}
+.experiences {
+  background-color: $color3;
+  //margin:1rem;
   padding: 1rem;
   font-family: $mainFont;
   figure{
     text-align:center;
-    padding-bottom:1rem;
+
     img {
+      padding:1rem;
       border-radius:6px;
       height: 25%;
     }
   }
   p{
-    padding-bottom: 1rem;
+    padding: 1rem;
+    color:$color1;
   }
 }
 
@@ -371,6 +387,7 @@ h3 {
 }
 
 .contact-container {
+  background-color: $color3;
   font-family: $mainFont;
   text-align: center;
 }
@@ -480,6 +497,7 @@ form {
     height: 0;
 
     iframe {
+      padding-bottom:1rem;
       border: 2px solid $color1;
       border-radius: 6px;
       left: 0;
@@ -497,21 +515,21 @@ form {
 /*scroll to up button*/
 
 .up-btn {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   background-color: $color2;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
-  right: 15px;
-  bottom: 20px;
+  right: 12px;
+  bottom: 18px;
   cursor: pointer;
 
   .icone {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: $color3;
     color: white;
@@ -520,7 +538,7 @@ form {
 
 footer {
   font-family: "Poppins", sans-serif;
-
+  margin-top:1rem;
   background-color: $color1;
   width: 100%;
   height: 10vh;
@@ -535,6 +553,7 @@ footer {
 
   li {
     a {
+
       font-size: 0.8rem;
       text-decoration: none;
       text-transform: uppercase;
@@ -543,10 +562,11 @@ footer {
       i {
         line-height: 10vh;
         display: contents;
-        /*font-size: 150%;*/
+        font-size: 300%;
       }
 
       span {
+        padding-left:0.5rem;
         display: none;
       }
     }
@@ -621,6 +641,20 @@ footer {
 
   /*FOOTER*/
 
+  .up-btn {
+    height: 40px;
+    width: 40px;
+    right: 10px;
+    bottom: 18px;
+
+
+    .icone {
+      width: 20px;
+      height: 20px;
+
+    }
+  }
+
   .socials-medias {
     li {
       font-size: 1rem;
@@ -690,6 +724,20 @@ footer {
 
   }
   /*FOOTER*/
+
+  .up-btn {
+    height: 50px;
+    width: 50px;
+    right: 10px;
+    bottom: 18px;
+
+
+    .icone {
+      width: 25px;
+      height: 25px;
+
+    }
+  }
 
   .socials-medias {
     li {
